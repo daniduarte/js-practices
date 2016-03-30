@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Practices - Classes</title>
+</head>
+<body>
+
+<script type="text/javascript">
+  
+  function Person(name){
+    this.name = name;
+    this.whoAmI = function(){ return this };
+  };
+
+  var bad = Person('Joey');
+  var good = new Person('Rob');
+
+  console.log('bad >>>', bad);
+  console.log('good >>>', good);
+
+</script>
+
+</body>
+</html>
